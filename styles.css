@@ -1,4 +1,4 @@
-/* CSS by Christina Carrasquilla, iteration by */
+/* CSS by Christina Carrasquilla, iteration by Dominic Kendrick*/
 
 /* ===== Color Palette ===== 
 
@@ -109,3 +109,24 @@ footer {
 /* target the nav and display it flex, spaceed around */
 /* target the .card-row to display flex */
 /* target the sections in .card-row witha width for 30% */
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: 1fr 300px;
+    }
+    header, nav, footer {
+        grid-column: 1/-1;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card-row section {
+        width: 30%;
+    }
+}
